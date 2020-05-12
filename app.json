@@ -1,0 +1,17 @@
+{
+  "name": "spotify",
+  "displayName": "spotify",
+  "expo": {
+    "name": "spotify",
+    "slug": "spotify",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
