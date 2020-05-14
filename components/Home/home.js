@@ -11,7 +11,7 @@ class Home extends React.Component {
             recently: null,
             featured: null,
             release: null,
-            access_token: 'BQD3lk_CiL7yjZRiGp4_o5e_9M8YMJ25G22p655XOB1XU7hvv_DPZn-zzF6k-FWu2NS463QrnSby0rPPh_bVDOFPhaNQNxXv48x35Mbn2QZ1r2LDGaIyuzhX47XKJbSTQ5UYwpW7YAP5aiigDBoJMl5--IkkiYUhCZVNUlTQFbOeoPh2XNK_p9pdsmMDF42mmMPdzXhJtu355B19cRVNBbio2ttN1i71oOWHhk9mrtP9NSinGlQnG1rpPLzsUhg_N5u0Eks6JBFzHbXJKgRXMf3xJLR_-wcIpxDpEd-6-75s'
+            access_token: 'BQAxhEOanLiqO6MQ2HaXo9i4G9_7vpvFB_bBGicgVtbATsMEheLsqHXL3BvVbeLg_pW4WdJPwxZfcTzRGX79MEkuMOxgxeWX01CGPk5zg1JLB6c_60bLBo9OpU0J4Y0wDJH7FtZdTpLbXpoFVZIsVhPozr-gWZMzJVcr9guoTN2HIXBIuTxqEWOVlymUs3YjG1GPtZqcUrKNSflYintbul8O8muTCiyu6OYjYSnLXcJ6UkTCeSW5bfMTVp8_Et93Qf6vtT854tBTSEAUR6Vfmva83ZmrOrbhs0Tk10yT8hpp'
         }
     }
 
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     main: {
         backgroundColor: '#1f2021',
         width: '100%',
-        height: '100%'
+        height: 'auto'
     },
     container: {
         flex: 1,

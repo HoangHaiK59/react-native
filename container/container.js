@@ -29,16 +29,20 @@ const BackButton = () => {
     )
 }
 
+//renderRightButton={SettingButton}
+
+// <Router navigationBarStyle={{ backgroundColor: '#1f2021', borderBottomWidth:0, elevation: 0}}>
+// <Scene key="root">
+//     <Scene key="signin" component={SignIn} />
+//     <Scene key="/" tintColor="white" initial={true}  component={Home} />
+// </Scene>
+// </Router>
+
 export default function Container () {
     return (
         <LoadAssets >
             <StatusBar barStyle="light-content"/>
-            <Router navigationBarStyle={{ backgroundColor: '#1f2021', borderBottomWidth:0, elevation: 0}}>
-                <Scene key="root">
-                    <Scene key="signin" component={SignIn} initial={true}/>
-                    <Scene key="/" tintColor="white" renderRightButton={SettingButton} component={Home} />
-                </Scene>
-            </Router>
+            <Home/>
             <BottomTab />
         </LoadAssets>
     )
