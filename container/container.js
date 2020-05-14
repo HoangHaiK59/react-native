@@ -2,10 +2,12 @@ import React from 'react';
 import {Router, Scene} from 'react-native-router-flux';
 import Home from '../components/Home/home';
 import SignIn from '../components/Signin/signin';
-import { TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, View, StatusBar } from 'react-native';
 import { Icon } from 'react-native-elements';
 import Player from '../components/Player/player';
 import Navbar from '../components/Navbar/navbar';
+import BottomTab from '../components/BottomTab/bottomTab';
+import LoadAssets from '../components/loadAssets';
 
 const SettingButton = () => {
     return (
@@ -29,15 +31,15 @@ const BackButton = () => {
 
 export default function Container () {
     return (
-        <View style={{width: '100%', height: '100%'}}>
+        <LoadAssets >
+            <StatusBar barStyle="light-content"/>
             <Router navigationBarStyle={{ backgroundColor: '#1f2021', borderBottomWidth:0, elevation: 0}}>
                 <Scene key="root">
                     <Scene key="signin" component={SignIn} initial={true}/>
                     <Scene key="/" tintColor="white" renderRightButton={SettingButton} component={Home} />
                 </Scene>
             </Router>
-            <Player />
-            <Navbar />
-        </View>
+            <BottomTab />
+        </LoadAssets>
     )
 }

@@ -1,4 +1,4 @@
-package com.spotify;
+package com.kross8.spotify;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
