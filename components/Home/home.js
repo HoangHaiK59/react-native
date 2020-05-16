@@ -11,7 +11,7 @@ class Home extends React.Component {
             recently: null,
             featured: null,
             release: null,
-            access_token: 'BQAzabPnhCQSeX6TYIBICYC9PifDn9Nho-kajeBj1ItNJtUitmkfhTr9IxaoxJ0UNeaTAPETzAMIWDP0Xa5KlxJqTMSM2U2YGZTABbJMCNSdAb84l3wd_jY7UpZqiiWSeQoAEmU6Mg56kQXO_5V0qzx-suRaEWhQm87s08sIrDnnUbAhwJ6djOwzi9v_JRZJcIJ4sB4IYdLxvhRPI_cp0-yIoD-SlW6AOKi2Lk30s2X8L2b1LnGEZOMSZ4klB4y91Le2n7FuHQNcWgnf2qPB-ftmy_CWdfBi1LXHW7ib1W2U'
+            access_token: 'BQAdMz4T8U2-cTQnbJBp0tYffJ4Sdze4b_Nvgsa1gL_wMDjLaKbAQzGzCRehpnQhAuGJBuV8mpXiWjwCv6FzxAwtA_WqU4rl_AOepoxFqMGAHKJlyqRckGbtK7YQ6QqZGW-F8awu5ZymBaNxPh09YBK3-YZ_UPHuw_gV_bf5RWjmTXQYXxiNgaXam1mcg6xWSfRvYsaPTQ0h_EEQoSpkRTlt-NtpxBxZttN9XC0J6KXpiy7XgvgCJaVFCNLsTa_ZPMWU4GyX-C8_WHidhhV1ByHu9zMb7FjipMRGbDk2pnxo'
         }
     }
 

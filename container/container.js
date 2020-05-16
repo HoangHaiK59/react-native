@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar/navbar';
 import BottomTab from '../components/BottomTab/bottomTab';
 import LoadAssets from '../components/loadAssets';
 import Album from '../components/Album';
+import Playlist from '../components/Playlist/playlist';
 
 const SettingButton = () => {
     return (
@@ -43,7 +44,7 @@ export default function Container () {
     return (
         <LoadAssets >
             <StatusBar barStyle="light-content"/>
-            <Album />
+            <Playlist />
             <BottomTab />
         </LoadAssets>
     )
