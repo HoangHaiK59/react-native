@@ -5,11 +5,13 @@ import {
   SafeAreaView,
   StyleSheet,
   Text,
-  View
+  View,
+  Alert
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { RectButton } from "react-native-gesture-handler";
 import { AntDesign, Feather as Icon } from "@expo/vector-icons";
+import Spotify from 'rn-spotify-sdk';
 
 const { width } = Dimensions.get("window");
 const styles = StyleSheet.create({
@@ -62,11 +64,33 @@ const styles = StyleSheet.create({
   }
 });
 
-interface PlayerProps {
-  onPress: () => void;
-}
+// interface PlayerProps {
+//   onPress: () => void;
+// }
 
-export default ({ onPress }: PlayerProps) => {
+export default class Player extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: null
+    }
+  }
+
+  componentDidMount() {
+    Spotify.getMe().then(result => {
+      this.setState({username: result.display_name});
+    })
+    .then(() => {
+
+    })
+    .catch(error => {
+      Alert.alert("Error", error.message)
+    })
+  }
+
+  render() {
+    console.log(this.state)
+    const { onPress } = this.props;
   return (
     <SafeAreaView style={styles.root}>
       <LinearGradient
@@ -102,4 +126,5 @@ export default ({ onPress }: PlayerProps) => {
       </View>
     </SafeAreaView>
   );
+  }
 };

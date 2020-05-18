@@ -44,7 +44,7 @@ export default function Container () {
     return (
         <LoadAssets >
             <StatusBar barStyle="light-content"/>
-            <Playlist />
+            <Album />
             <BottomTab />
         </LoadAssets>
     )
